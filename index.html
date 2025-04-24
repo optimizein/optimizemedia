@@ -1,60 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Optimize Media</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Optimize Media</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2c5f9f2a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <img src="images/logo.png" alt="Optimize Media Logo" class="logo">
-        <h1>Optimize Media</h1>
-        <p>We are a creative design agency offering tailor-made content for your brand. From stunning visuals to impactful videos and daily IG/FB management, we help businesses grow and shine online.</p>
-        <button class="cta-btn">Get in Touch</button>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <h1>Optimize Media</h1>
+    <p>We are a creative design agency offering tailor-made content for your brand. From stunning visuals to impactful videos and daily IG/FB management, we help businesses grow and shine online.</p>
+    <a href="#contact" class="btn">Get in Touch</a>
+  </section>
 
-    <!-- Services Section -->
-    <section class="services">
-        <h2>Our Services</h2>
-        <div class="service-card">
-            <h3>Graphic Design</h3>
-            <p>Posters, Branding, Product Design</p>
-        </div>
-        <div class="service-card">
-            <h3>Video Editing</h3>
-            <p>Product Videos, Reels, Promo Clips</p>
-        </div>
-        <div class="service-card">
-            <h3>IG/FB Management</h3>
-            <p>Content Planning, Daily Posting & Insights</p>
-        </div>
-    </section>
+  <!-- Online Status -->
+  <section class="status">
+    <p>📍 We are currently working online</p>
+    <small>📌 Coming Soon: Our Offline Studio Setup</small>
+  </section>
 
-    <!-- Recent Work Section -->
-    <section class="recent-work">
-        <h2>Our Recent Work</h2>
-        <div class="work-item">
-            <img src="images/poster1.jpg" alt="Creative Poster">
-            <p>Creative Poster</p>
-        </div>
-        <div class="work-item">
-            <img src="images/motion1.gif" alt="Motion Poster">
-            <p>Motion Poster</p>
-        </div>
-        <div class="work-item">
-            <img src="images/product_video.jpg" alt="Product Promo">
-            <p>Product Promo</p>
-        </div>
-    </section>
+  <!-- Our Work -->
+  <section class="section">
+    <h2>Our Work</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="images/work1.jpg" alt="">
+        <h3>Creative Poster</h3>
+        <p>Designed for online engagement and brand awareness.</p>
+      </div>
+      <div class="card">
+        <img src="images/work2.jpg" alt="">
+        <h3>Motion Poster</h3>
+        <p>High-impact visuals with animated motion.</p>
+      </div>
+      <div class="card">
+        <img src="images/work3.jpg" alt="">
+        <h3>Product Promo</h3>
+        <p>Crisp video content that highlights your product.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 Optimize Media. All rights reserved.</p>
-    </footer>
+  <!-- Our Team -->
+  <section class="section">
+    <h2>Our Team</h2>
+    <div class="cards team">
+      <div class="card">
+        <img src="images/team1.jpg" alt="">
+        <h3>Sachin Shakya</h3>
+        <p>Founder & Creative Head</p>
+      </div>
+      <div class="card">
+        <img src="images/team2.jpg" alt="">
+        <h3>Bindiya Gupta</h3>
+        <p>Graphic Designer</p>
+      </div>
+      <div class="card">
+        <img src="images/team3.jpg" alt="">
+        <h3>Sashank Pandey</h3>
+        <p>Video Editor</p>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <h2>Let’s Work Together</h2>
+    <p>Reach out for collaborations or just say hi! We’re always ready to help your brand grow.</p>
+    <div class="social">
+      <a href="mailto:optimizemediaom@gmail.com"><i class="fas fa-envelope"></i> optimizemediaom@gmail.com</a>
+      <a href="https://instagram.com/optimizemedia.in" target="_blank"><i class="fab fa-instagram"></i> @optimizemedia.in</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; <span id="year"></span> Optimize Media. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>

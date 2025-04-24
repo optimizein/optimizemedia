@@ -1,19 +1,5 @@
-{
-  "name": "optimize-media",
-  "version": "1.0.0",
-  "description": "A creative design agency website",
-  "main": "index.js",
-  "dependencies": {
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
-  },
-  "devDependencies": {
-    "webpack": "^5.0.0",
-    "webpack-cli": "^4.0.0"
-  },
-  "scripts": {
-    "start": "webpack serve"
-  },
-  "author": "Sachin Shakya",
-  "license": "ISC"
+"scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start"
 }

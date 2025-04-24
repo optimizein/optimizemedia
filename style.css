@@ -1,92 +1,112 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background: #ffffff;
+  color: #1e3a8a;
 }
 
 .hero {
-    background-color: #e9f7fe;
-    text-align: center;
-    padding: 50px 0;
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #dbeafe, #ffffff);
 }
 
-.hero img.logo {
-    width: 100px;
-    margin-bottom: 20px;
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
 }
 
-.hero h1 {
-    color: #1e3a8a;
-    font-size: 3rem;
+h1 {
+  font-size: 3rem;
+  margin: 0 0 20px;
 }
 
-.hero p {
-    color: #3b82f6;
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto;
+p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 20px;
 }
 
-.cta-btn {
-    background-color: #1e3a8a;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 10px;
-    font-size: 1rem;
-    cursor: pointer;
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #2563eb;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
 }
 
-.services {
-    padding: 50px 0;
-    background-color: white;
-    text-align: center;
+.status {
+  text-align: center;
+  padding: 20px;
+  background-color: #eff6ff;
 }
 
-.services h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
+.section {
+  padding: 60px 20px;
+  text-align: center;
 }
 
-.service-card {
-    display: inline-block;
-    width: 30%;
-    background-color: #f3f4f6;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
+h2 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 40px;
 }
 
-.service-card h3 {
-    color: #1e3a8a;
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.recent-work {
-    padding: 50px 0;
-    background-color: #f3f4f6;
-    text-align: center;
+.card {
+  background-color: #f0f9ff;
+  padding: 20px;
+  border-radius: 16px;
+  width: 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
 }
 
-.recent-work h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
+.card:hover {
+  transform: scale(1.03);
 }
 
-.work-item {
-    display: inline-block;
-    width: 30%;
-    margin: 10px;
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
 }
 
-.work-item img {
-    width: 100%;
-    border-radius: 10px;
+.card h3 {
+  margin-bottom: 8px;
+}
+
+.team .card img {
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.social a {
+  display: inline-block;
+  margin: 10px;
+  font-size: 1rem;
+  color: #1e3a8a;
+  text-decoration: none;
+}
+
+.social a:hover {
+  text-decoration: underline;
 }
 
 footer {
-    background-color: #1e3a8a;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  background-color: #1e3a8a;
+  color: white;
+  padding: 20px;
+  font-size: 0.9rem;
 }
